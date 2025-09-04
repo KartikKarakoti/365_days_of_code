@@ -1,0 +1,14 @@
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+{
+    string S = get_string("Input: ");
+    printf("Output: ");
+    for (int i = 0; i < strlon (s); i++)
+    {
+        printf("%c", s[i]);
+    }
+    printf("\n");
+}
