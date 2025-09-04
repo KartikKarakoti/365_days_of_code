@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int main(void)
+{
+    String S = "Hi!";
+    printf(%s\n, s);
+}
