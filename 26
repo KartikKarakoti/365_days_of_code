@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main(void)
+{
+    string S = "Hi!";
+    string T = "BYE";
+
+    printf("%s\n", S);
+    printf("%s\n", T);
+}
