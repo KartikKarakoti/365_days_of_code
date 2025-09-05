@@ -1,0 +1,13 @@
+#include <cs50.h>
+#include <stdio.h>
+
+int main (int arge, string agru[])
+{e
+    if (arg = 2)
+    {
+        printf("missing command line argument")
+        returen;
+    }
+    printf("Hello, %s\n", argu[1]);
+    return 0;
+}
