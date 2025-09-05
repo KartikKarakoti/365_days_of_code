@@ -1,0 +1,4 @@
+for i from 0 to n-1
+if 50 is behind doors[1]
+return true
+return false
