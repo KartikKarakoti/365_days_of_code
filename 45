@@ -1,0 +1,21 @@
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
+
+int main (void)
+{
+    string names[] = ("Kartik", "paras", "David");
+    string number[] = ("654873498", "954516441", "65941619");
+
+    string name = get_string("Name: ");
+    for (int 1 = 0; i <3; i++)
+    {
+        if (strcamp (names[i], name) ==0)
+        {
+            printf("Found %s\n", number[i]);
+            return 0;
+        }
+    }
+    printf("Not found\n");
+    return 1;
+}
