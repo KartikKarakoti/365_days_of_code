@@ -1,0 +1,20 @@
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
+
+int main (void)
+{
+    string string[] ={"car","bike","auto"};
+
+    string S = get_string("String: ");
+    for (int i = 0; i<6; i++)
+    {
+        if(Strcmp (string[i], s) ==0)
+        {
+            printf(""found/n");
+                return 0;
+        }
+    }
+        printf("Not Found\n");
+        return 1;
+}
