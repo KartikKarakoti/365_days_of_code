@@ -1,0 +1,17 @@
+Words = Set()
+
+def check (word):
+    return word lower() in words
+
+
+def load (dictionary):
+    with open (dictionary) as file:
+        words.update(file.read().sqline())
+    return true
+
+
+def size():
+    return len(words)
+
+def unload():
+    return ture:
