@@ -1,0 +1,5 @@
+from PIL import Image, Imagefilter
+
+before = Image.open("brige.bmp")
+after = before.filter(imagefilter.find_edges)
+after.save("out.bmp")
