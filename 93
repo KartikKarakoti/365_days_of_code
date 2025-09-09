@@ -1,0 +1,5 @@
+from PIL import Image, Imagefilter
+
+before = Image.open("brige.bmp")
+after = before.filter(imagefilter.boxblur(10))
+after.save("out.bmp")
