@@ -1,0 +1,38 @@
+from tabulate import tabulate
+
+
+def main():
+    print("\nTaskMaster | To-Do List")
+    running = True
+    database, count = [], 0
+
+    while running:
+        action = get_input()
+
+        if action == "V":
+            view(database)
+        elif action == "C":
+            database, count = create(database, count)
+        elif action == "U":
+            database = update(database)
+        elif action == "D":
+            database = delete(database)
+        else:
+            running = False
+
+
+def get_input():
+    instructions = [{"Key": "V", "Action": "View Tasks"},
+                    {"Key": "C", "Action": "Create a Task"},
+                    {"Key": "U", "Action": "Update a Task"},
+                    {"Key": "D", "Action": "Delete a Task"},
+                    {"Key": "E", "Action": "Exit"}]
+
+    while True:
+        print(tabulate(instructions, headers="keys", tablefmt="rounded_outline"))
+        action = input("What do you want to do?: ").upper()
+
+        if action in ["V", "C", "U", "D", "E"]:
+            return action
+        else:
+            print("Invalid key, try again.")
